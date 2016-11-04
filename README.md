@@ -8,13 +8,20 @@ forcedrag({
 	selector: "canvas",
 	inverted: false,
 	
-	down: function () {
-		
+	down: function (e) {
+		console.log(e.coords); // { x: 0, y: 0 }
 	},
 	move: function () {
-		
+		console.log(e.angle); // 180
+		console.log(e.coords); // { x: 0, y: 5 }
+		console.log(e.coordsFirstEvent); // { x: 0, y: 0 }
+		console.log(e.force); // 0.25
 	},
-	up: function () {
+	up: function (e) {
+		console.log(e.angle); // 180
+		console.log(e.coords); // { x: 0, y: 10 }
+		console.log(e.coordsFirstEvent); // { x: 0, y: 0 }
+		console.log(e.force); // 0.5
 		
 	}
 });
