@@ -1,8 +1,10 @@
 # vicolsson-forcedrag
 A small library to get angle and force of a drag
 
+[Demo](https://htmlpreview.github.io/?https://github.com/vicolsson/vicolsson-forcedrag/blob/master/example/index.html)
 
-#Usage
+
+### Usage
 ```javascript
 forcedrag({
 	selector: "canvas",
