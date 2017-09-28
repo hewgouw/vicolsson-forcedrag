@@ -13,7 +13,7 @@ forcedrag({
 	down: function (e) {
 		console.log(e.coords); // { x: 0, y: 0 }
 	},
-	move: function () {
+	move: function (e) {
 		console.log(e.angle); // 180
 		console.log(e.coords); // { x: 0, y: 5 }
 		console.log(e.coordsFirstEvent); // { x: 0, y: 0 }
